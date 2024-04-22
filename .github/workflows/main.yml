@@ -1,6 +1,6 @@
 name: deploy
 
-ON:
+on:
   push:
     branches:
       - "main"
@@ -30,4 +30,3 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/demo47:latest
-      -
